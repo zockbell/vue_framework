@@ -1,0 +1,53 @@
+.readWrapper {
+    // background: $bg;
+    background: #fff;
+
+    .adver-img {
+        img {
+            width: 100%;
+        }
+    }
+
+    .content {
+        padding: 0 15px;
+
+        .van-tabs__line {
+            background-color: #20D378;
+        }
+
+        .van-row {
+            padding: 15px 0;
+            border-bottom: 1px solid #dae2e0;
+        }
+
+        .abstract {
+            font-size: 14px;
+            color: #666;
+            line-height: 2;
+        }
+
+        dl {
+            padding-left: 15px;
+
+            dt {
+                color: #333;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 6px;
+            }
+            dd {
+                font-size: 14px;
+                color: #666;
+            }
+        }
+        .icon-bofang {
+            font-size: 40px;
+            color: #20D378;
+        }
+
+        .van-pagination {
+            background: #ddd;
+            margin: 15px 0 70px;
+        }
+    }
+}

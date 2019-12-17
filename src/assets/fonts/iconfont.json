@@ -1,0 +1,65 @@
+{
+  "id": "1517061",
+  "name": "vue-mobile-template",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "22144",
+      "name": "脚印",
+      "font_class": "jiaoyin",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "1984127",
+      "name": "播放",
+      "font_class": "bofang",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "2258872",
+      "name": "登录",
+      "font_class": "dl",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "3381403",
+      "name": "心",
+      "font_class": "Favorites",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "8922351",
+      "name": "音频",
+      "font_class": "yinpin",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "10270433",
+      "name": "返 回",
+      "font_class": "fanhui",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "10985450",
+      "name": "播放",
+      "font_class": "bofang1",
+      "unicode": "e777",
+      "unicode_decimal": 59255
+    },
+    {
+      "icon_id": "11323266",
+      "name": "首 页 (2)",
+      "font_class": "shouye",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    }
+  ]
+}

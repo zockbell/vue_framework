@@ -1,0 +1,128 @@
+//变量
+$margin: auto;
+$color: #fff;
+$colFs: #1d1d1d;
+$colHover: #159764;
+$col333: #333;
+$col666: #666;
+$col999: #999;
+$coleee: #eee;
+$col000: #000;
+$commonColor: #1989fa;
+$bgColor: #fbfbfb;
+$one: 1px;
+$five: 5px;
+$num: 10px;
+$fs12: 12px;
+$fs14: 14px;
+$fs16: 16px;
+$fs18: 18px;
+$ovh: hidden;
+$cursor: pointer;
+$colBor: #d2d2d2;
+$colActive: #e51e25;
+
+//占位符
+%fl {
+    float: left;
+}
+%fr {
+    float: right;
+}
+%clearfix {
+    zoom:1;
+    &:after {
+        visibility: hidden; 
+        display: block; 
+        font-size:0; 
+        content:" ";
+        clear:both; 
+        height:0;
+    }
+}
+%red {
+    color: red;
+}
+
+//混合宏
+@mixin display($display){
+    display: $display;
+}
+@mixin float($float){
+    float: $float;
+}
+@mixin text-align($align){
+    text-align: $align;
+}
+@mixin margin-top($num){
+    margin-top: $num;
+}
+@mixin margin-bottom($num){
+    margin-bottom: $num;
+}
+@mixin padding-top($num){
+    padding-top: $num;
+}
+@mixin ellipsis($w){
+    width: $w;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+@mixin border($w,$color){
+    border: $w solid $color;
+}
+@mixin borderT($w,$color){
+    border-top: $w solid $color;
+}
+@mixin borderR($w,$color){
+    border-right: $w solid $color;
+}
+@mixin borderB($w,$color){
+    border-bottom: $w solid $color;
+}
+@mixin borderL($w,$color){
+    border-left: $w solid $color;
+}
+@mixin position($pos){
+    position: $pos;
+}
+
+@mixin border-radius($radius){
+    border-radius: $radius;
+}
+
+//用插值来表示margin-top和padding-top
+$properties: (margin, padding);
+@mixin set-value($side, $value){
+    @each $prop in $properties {
+        #{$prop}-#{$side}: $value;
+    }
+}
+
+//弹出窗口垂直居中
+@mixin popup($width, $height){
+    width: $width;
+    height: $height;
+    position:fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+    margin-left: -($width) / 2;
+    margin-top: -($height) / 2;
+}
+
+//继承
+.mask, .sidebar_mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    display: none;
+    background: rgba(0,0,0,0.5);
+}
+.sidebar_mask {
+    z-index: 999;
+}

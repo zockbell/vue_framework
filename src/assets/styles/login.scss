@@ -1,0 +1,31 @@
+.loginwrap {
+    padding: 15px;
+    background: #fff;
+
+    .logo {
+        padding: 0 10px;
+        text-align: center;
+        background: #fff;
+        margin: 0 auto 15px;
+        // border-radius: 50%;
+
+        img {
+            top: 5px;
+            width: 30%;
+            position: relative;
+        }
+    }
+    .visitor {
+        top: 10px;
+        color: #666;
+        position: relative;
+        font-size: .2rem;
+    }
+    .van-popup {
+        color: red;
+        padding-top: 30px;        
+        font-size: .3rem;
+        text-align: center;                
+        box-sizing: border-box;
+    }
+}

@@ -1,0 +1,14 @@
+.headerNavWrapper {
+    height: 40px;
+    font-size: .36rem;
+    line-height: 40px;
+    text-align: center;
+    background: $coleee;
+
+    i {
+        left: 15px;
+        color: $col000;
+        font-size: .4rem;
+        @include position(absolute);
+    }
+}

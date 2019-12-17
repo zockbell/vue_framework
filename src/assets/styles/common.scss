@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Helvetica Neue',Helvetica,'PingFang SC','Hiragino Sans GB','Microsoft YaHei',SimSun,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+    // background: #f0f3f6;
+    
+    &.is-component {
+      overflow: hidden;
+    }
+  }
+  
+  dl,dt,dd,ul,ol,li {
+    margin: 0;
+    padding: 0;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  @media (max-width: 1140px) {
+    .container,
+    .page-container {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container,
+    .page-container {
+      padding: 0 20px;
+    }
+  
+    #app.is-component .headerWrapper .container {
+      padding: 0 12px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    body {
+        width: 750px;
+        margin: 0 auto;
+    }
+  }
