@@ -416,10 +416,10 @@ module.exports = {
 * ViewModel 通过双向数据绑定把 View 层和 Model 层连接了起来，而View 和 Model 之间的同步工作完全是自动的，无需人为干涉，因此开发者只需关注业务逻辑，不需要手动操作DOM, 不需要关注数据状态的同步问题，复杂的数据状态维护完全由 MVVM 来统一管理。
 
 #### 4.3.2 MVVM的模式图
-![](https://note.youdao.com/yws/res/3627/WEBRESOURCEfeaf86b9c04b02e669e321857f8c9bed)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image005.png?raw=true)
 
 #### 4.3.3 vue的双向数据绑定的原理
-![](https://note.youdao.com/yws/res/3640/WEBRESOURCEb92f2eb9af7b93585c818cdfe5b64b29)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image007.png?raw=true)
 
 * Observer 数据监听器，能够对数据对象的所有属性进行监听，如有变动可拿到最新值并通知订阅者，内部采用Object.defineProperty的getter和setter来实现。
 
@@ -430,10 +430,10 @@ module.exports = {
 * Dep 消息订阅器，内部维护了一个数组，用来收集订阅者（Watcher），数据变动触发notify 函数，再调用订阅者的 update 方法。
 
 #### 4.3.4 url到页面显示的过程
-![image](https://note.youdao.com/yws/res/3642/WEBRESOURCEd1bbfde07e101f2c9cec91e861a9efea)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image009.png?raw=true)
 
 #### 4.3.5 浏览器端显示HTML的过程
-![image](https://note.youdao.com/yws/res/3644/WEBRESOURCE13c6ef741ad2244e4d7f3729f4645720)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image011.png?raw=true)
 
 ---
 
@@ -652,7 +652,7 @@ export default {
 #### 6.1.1 插件简介   
    * 介绍：在web开发中，路由是指根据url分配到对应的处理程序。
    * 作用：通过管理url,实现url和组件的对应和通过url进行组件之间的切换，加载单个HTML页面（SPA），并在用户与应用程序交互时动态更新该页面
-![image](https://note.youdao.com/yws/res/3730/WEBRESOURCE491ab307fc2eebaac1d6c82d299d0f66)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image013.png?raw=true)
 
    * 官网网址：```https://router.vuejs.org/zh/guide/#html```
    * 安装模块: ```npm install vue-router --save```
@@ -664,7 +664,7 @@ export default {
    import VueRouter from 'vue-router'
    Vue.use(VueRouter)
    ```
-   ![image](https://note.youdao.com/yws/res/3761/WEBRESOURCE53e20486b2870460fd269ee6d885ac8f)
+   ![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image015.png?raw=true)
    
 * router/index.js详细配置
    * 创建路由实例对象
@@ -681,22 +681,22 @@ export default {
         router
     })
     ```
-    ![image](https://note.youdao.com/yws/res/3772/WEBRESOURCE00d7ab8b1e3d866b023034d3a3cf8bf8)
+    ![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image017.png?raw=true)
     
     * 告诉路由渲染的位置
     ```App.vue```中添加 ```<router-view></router-view>```
     
     * 路由跳转
     
-    ![image](https://note.youdao.com/yws/res/3779/WEBRESOURCEcf6cf14e415fae58194e9e04120bfb0e)
+    ![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image019.png?raw=true)
 
 #### 6.1.3 开始一个使用
-![image](https://note.youdao.com/yws/res/3789/WEBRESOURCE0612fddae23544be62dbde4e026eb507)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image021.png?raw=true)
 
 #### 6.1.4 命名视图
 在同级同时展示多个视图，而不是嵌套展示
 
-![image](https://note.youdao.com/yws/res/3795/WEBRESOURCE61087a15b6d9f24c510b668df2939dda)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image024.gif?raw=true)
 
 #### 6.1.5 动态路径
 匹配到的所有路由，全都映射到同一个组件
@@ -742,7 +742,7 @@ const router = new VueRouter({
 
 })
 ```
-![image](https://note.youdao.com/yws/res/3807/WEBRESOURCE4b7dfcac87dcc00eb0db1b18a858cf72)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image025.png?raw=true)
 
 #### 6.1.7 router-link配置项
 - to 表示目标路由的链接
@@ -782,7 +782,7 @@ const router = new VueRouter({
   </keep-alive>
 </transition>
 ```
-![image](https://note.youdao.com/yws/res/3828/WEBRESOURCE07b5d9ce8cec79944fae7e30208f47ee)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image027.png?raw=true)
 
 2. style区域
 ```
@@ -798,7 +798,7 @@ const router = new VueRouter({
   opacity: 0;
 }
 ```
-![image](https://note.youdao.com/yws/res/3834/WEBRESOURCE8b04a953009cce936d5ba2e08ad2d91c)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image029.png?raw=true)
 
 3. 官网动画传送门
 > https://router.vuejs.org/zh/guide/advanced/transitions.html#%E5%8D%95%E4%B8%AA%E8%B7%AF%E7%94%B1%E7%9A%84%E8%BF%87%E6%B8%A1
@@ -815,7 +815,7 @@ const router = new VueRouter({
 
 **使用name属性改变类名前缀**
 
-![image](https://note.youdao.com/yws/res/3849/WEBRESOURCEd632e4c891177d8741d7514515ac7b27)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image031.png?raw=true)
 
 5. 过渡模式
 
@@ -830,9 +830,9 @@ const router = new VueRouter({
 
 本架构中使用如下：
 
-![image](https://note.youdao.com/yws/res/3857/WEBRESOURCEe1a55a70514ae9b96f8b27b36466bbae)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image033.png?raw=true)
 
-![image](https://note.youdao.com/yws/res/3860/WEBRESOURCEb1b8e31e0a0c4a4f5cb7b070f55592ea)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image035.png?raw=true)
 
 #### 6.1.11 编程式导航
 
@@ -966,17 +966,17 @@ new Vue({
 
 #### 6.2.4 Vuex的流程图
 
-![image](https://note.youdao.com/yws/res/3923/WEBRESOURCE8d015b391be72246fb0e8c73ef34fdcd)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image037.png?raw=true)
 
 #### 6.2.5 此架构中vuex的使用
 
 1. 目录结构
 
-![image](https://note.youdao.com/yws/res/3931/WEBRESOURCEd1a7e04ef9266b5a28ea791aa56b2090)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image039.png?raw=true)
 
 2. 将store分modules引用，便于管理
 
-![image](https://note.youdao.com/yws/res/3934/WEBRESOURCEd46da634d62eae14fa7f3fd1da98b083)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image041.png?raw=true)
 
 3. 在每个模块中定义
 ```
@@ -1087,7 +1087,7 @@ export default new Vuex.Store({
 
 3.  控制台打印
 成功将上一状态和下一状态打印出来
-![image](https://note.youdao.com/yws/res/3971/WEBRESOURCE4a066f2717ccb358a34be382931d801d)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image043.png?raw=true)
 
 ### 6.3 qs
 #### 6.3.1 插件简介
@@ -1444,17 +1444,17 @@ import 'animate.css'
 
 > Github下载地址：https://github.com/vuejs/vue-devtools
 
-![image](https://note.youdao.com/yws/res/4106/WEBRESOURCEe7fbb7be3c35bf425869374c9ebedb13)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image045.png?raw=true)
 
-![image](https://note.youdao.com/yws/res/4110/WEBRESOURCE8a223155f1137482f74e0d6d1e855cb1)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image047.png?raw=true)
 
-![image](https://note.youdao.com/yws/res/4113/WEBRESOURCE73cca390974ee8a222139147294a8827)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image049.png?raw=true)
 
-![image](https://note.youdao.com/yws/res/4117/WEBRESOURCEf80cce21118967f22be49c53796d07fc)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image051.png?raw=true)
 
 ### 6.7.2 使用vuex中looger可在console控制台中查看状态
 
-![image](https://note.youdao.com/yws/res/4122/WEBRESOURCEe84c7dfea2bd6b95501796bc2d3083e3)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image053.png?raw=true)
 
 ---
 
@@ -1480,37 +1480,37 @@ vue -V
 vue ui
 ```
 
-![image](https://note.youdao.com/yws/res/4134/WEBRESOURCE5937860800b799064f8ff78032342841)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image055.png?raw=true)
 
 ### 8.3  项目、创建、导入
 
-![image](https://note.youdao.com/yws/res/4138/WEBRESOURCE9f6495d9b69b795aa3ded0fc28639492)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image057.png?raw=true)
 
 在此界面可直接创建和导入，我选择将此架构导入，如图
 
-![image](https://note.youdao.com/yws/res/4143/WEBRESOURCEbccc65a2883b584011352d156082415b)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image059.png?raw=true)
 
 #### 8.3.1 左侧菜单介绍 
 1.   插件：可以从插件商店搜索并下载安装各种网上的插件
 
-![image](https://note.youdao.com/yws/res/4148/WEBRESOURCE86ea005e90d8df2c23b1582872fc3f6f)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image061.png?raw=true)
 
 
 2.   依赖：对已安装对插件配置管理
 
-![image](https://note.youdao.com/yws/res/4152/WEBRESOURCEa1ce3b60c4df5480d39f204cd65bdefb)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image063.png?raw=true)
 
 3.  配置： vue cli的配置，功能是对vue.config.js的映射
 
-![image](https://note.youdao.com/yws/res/4157/WEBRESOURCE90974bc2c64a32662dbaea594e0addba)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image065.png?raw=true)
 
 4. 任务：就是项目可运行的命令，如打包、本地调试。
 
-![image](https://note.youdao.com/yws/res/4161/WEBRESOURCE9ded282d474c253813e886e73464d2a8)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image067.png?raw=true)
 
-![image](https://note.youdao.com/yws/res/4164/WEBRESOURCE220c93f35542b0c4c4de0b6d06d335df)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image069.png?raw=true)
 
-![image](https://note.youdao.com/yws/res/4166/WEBRESOURCE110f2ffe90731f415f95f4b80b8b6c69)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image071.png?raw=true)
 
 ---
 
