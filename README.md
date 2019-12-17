@@ -403,9 +403,9 @@ module.exports = {
 ## 4、框架
 
 ### 4.1 前后端分离总架构图
-![image](https://note.youdao.com/yws/res/3618/WEBRESOURCEcb9d1ab0b11913fcef7dafd08d0db430)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image001.png?raw=true)
 ### 4.2 前端架构设计图
-![image](https://note.youdao.com/yws/res/3624/WEBRESOURCE8fdda76cd21a0583c52a9103c2c9a351)
+![](https://github.com/zockbell/pep_vue/blob/master/src/assets/images/md_img/image003.png?raw=true)
 
 ### 4.3 MVVM架构模式
 #### 4.3.1 MVVM的简介
@@ -416,10 +416,10 @@ module.exports = {
 * ViewModel 通过双向数据绑定把 View 层和 Model 层连接了起来，而View 和 Model 之间的同步工作完全是自动的，无需人为干涉，因此开发者只需关注业务逻辑，不需要手动操作DOM, 不需要关注数据状态的同步问题，复杂的数据状态维护完全由 MVVM 来统一管理。
 
 #### 4.3.2 MVVM的模式图
-![image](https://note.youdao.com/yws/res/3627/WEBRESOURCEfeaf86b9c04b02e669e321857f8c9bed)
+![](https://note.youdao.com/yws/res/3627/WEBRESOURCEfeaf86b9c04b02e669e321857f8c9bed)
 
 #### 4.3.3 vue的双向数据绑定的原理
-![image](https://note.youdao.com/yws/res/3640/WEBRESOURCEb92f2eb9af7b93585c818cdfe5b64b29)
+![](https://note.youdao.com/yws/res/3640/WEBRESOURCEb92f2eb9af7b93585c818cdfe5b64b29)
 
 * Observer 数据监听器，能够对数据对象的所有属性进行监听，如有变动可拿到最新值并通知订阅者，内部采用Object.defineProperty的getter和setter来实现。
 
