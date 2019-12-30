@@ -1526,12 +1526,46 @@ npm install   or  yarn install
 npm run serve  or  yarn run serve
 ```
 
-### 9.3 项目打包
+### 9.3 正式环境打包vue.config.js配置
+在```vue.config.js```中```module.exports```中添加```publicPath```，如下：
+```
+module.exports = {
+   publicPath:'/pep_vue/',
+    devServer: {
+        host: '0.0.0.0',        // 设置主机地址
+        port: 9080,             // 设置默认端口
+        open: true,             // 启动项目自动打开浏览器
+        proxy: {                // 设置代理
+            '/api/': {
+                target: 'https://xxx.pep.cn/',   // 设置你调用的接口域名
+                ws: true,                               // 是否要代理 websockets
+                secure: false,                          // 如果是https接口，需要配置这个参数
+                changeOrigin: true,                     // 是否跨域
+                pathRewrite: {
+                    '^/api': '/'                        // 这里可以理解为用'/api'来代替target里面的地址，例如我们调用https://xxx.pep.cn/static/textbook/audio_res.json，直接写成'/api/static/textbook/audio_res.json'
+                }
+            }
+        }
+    },
+    css: {
+      loaderOptions: {
+        // 给 sass-loader 传递选项
+        sass: {
+          // @/ 是 src/ 的别名
+          // 所以这里假设你有 `src/variables.sass` 这个文件
+          prependData: `@import "~@/assets/styles/variable/variable.scss";`
+        }        
+      }
+    }
+}
+```
+
+### 9.4 项目打包
 ```
 npm run build  or yarn build
 ```
 
-### 9.4 项目部署，服务器Nginx配置
+### 9.5 项目部署，服务器Nginx配置
 ```
 location / {
 
