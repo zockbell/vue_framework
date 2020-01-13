@@ -398,6 +398,9 @@ module.exports = {
 }
 ```
 
+* Vue Loader 使用预处理器
+> https://vue-loader.vuejs.org/zh/guide/pre-processors.html#sass
+
 ---
 
 ## 4、框架
