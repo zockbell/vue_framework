@@ -17,7 +17,7 @@ Vue+webpack+nginx反向代理+vantUI+sass+node
 ```
 frendEnds
 │  .babelrc						// 按需引入vant中的组件
-│  babel.config.js					// 按需引入vant中的组件
+│  babel.config.js					// es babel配置
 │  package-lock.json				// 锁定安装时的包的版本号和来源
 │  package.json					// 依赖的版本管理
 │  README.md					// 项目说明手册
