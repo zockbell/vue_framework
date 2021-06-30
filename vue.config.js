@@ -1,4 +1,6 @@
 module.exports = {
+    publicPath: '/vue_framework/', // 基本路径
+    outputDir: "vue_framework",   //构建时的输出目录
     devServer: {
         host: '0.0.0.0',        // 设置主机地址
         port: 9080,             // 设置默认端口
